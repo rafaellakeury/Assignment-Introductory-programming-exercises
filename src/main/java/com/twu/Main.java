@@ -13,5 +13,8 @@ public class Main {
         diamond.drawIsoscelesTriangle(3);
         diamond.drawCenteredDiamond(3);
         diamond.drawDiamondWithName(3);
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        fizzBuzz.printFrizzBuzzNumbers();
     }
 }
