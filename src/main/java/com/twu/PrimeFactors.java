@@ -18,10 +18,27 @@ public class PrimeFactors {
                 primesMultiply *= primesFactor;
                 n = n / primesFactor;
             } else {
-                primesFactor++;
+                primesFactor = getNextPrime(primesFactor);
             }
         }
         System.out.println(primeNumbers.toString());
+    }
+
+
+    private boolean isPrime(int number) {
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+    private int getNextPrime(int number) {
+        do {
+            number++;
+        } while (!isPrime(number));
+
+        return number;
     }
 
 }

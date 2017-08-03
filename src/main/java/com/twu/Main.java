@@ -18,6 +18,6 @@ public class Main {
         fizzBuzz.printFrizzBuzzNumbers();
 
         PrimeFactors primeFactors = new PrimeFactors();
-        primeFactors.generate(12);
+        primeFactors.generate(30);
     }
 }
